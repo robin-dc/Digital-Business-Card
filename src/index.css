@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body::-webkit-scrollbar{
+  width:5px;
+}
+a{
+  color:white;
+  text-decoration: gainsboro;
+}
+.app{
+  background-color: #23252C;
+  color:white;
+  text-align: center;
+  padding:2rem;
+}
+.container{
+  max-width: 400px;
+  margin:0 auto;
+  background-color: #1A1B21;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0 0 32px 0 rgba( 31, 38, 135, 0.37 );
+}
+.profile{
+  width:100%;
+  height:25rem;
+  object-fit: cover;
+}
+.name{
+  padding-block: 1.5rem;
+  line-height: 1.5;
+}
+.name .title{
+  color: #F3BF99;
+}
+.action{
+  display: flex;
+  gap:1rem;
+  justify-content: center;
+}
+.action button{
+  border:none;
+  border-radius: 10px;
+  padding:0.7rem 2rem;
+  width: 9.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.action button:active{
+  scale:0.9;
+}
+
+.action button img{
+  width:1.3rem;
+}
+.action button span{
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.email{
+  color: #374151;
+}
+.linkedin{
+ background-color: #5093E2;
+ color:white;
+}
+.text{
+  text-align: left;
+  padding:3rem 2.6rem;
+  display:flex;
+  flex-direction: column;
+  gap:1rem;
+}
+.paragraph h2{
+  font-size: 1.4rem;
+  padding-block:0.5rem;
+}
+.paragraph p{
+  color: rgba(220, 220, 220, 0.815);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.footer{
+  background-color: #161619;
+  padding:1.3rem 2rem;
+}
+.footer ul{
+  list-style: none;
+  display:flex;
+  gap:2rem;
+  justify-content: center;
+  align-items: center;
+}
+.footer ul li img{
+  width:2rem;
+  height:2rem;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.footer ul li img:hover, .action button:hover{
+  box-shadow: 0 0 15px 2px rgba( 31, 38, 135, 0.37 );
+}
+a:hover{
+  text-decoration: underline;
+}
+@media (max-width:800px){
+  .action button{
+    width: 9.6em;
+  }
+}
